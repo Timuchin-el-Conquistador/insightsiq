@@ -404,8 +404,8 @@ class InsightsIQ extends React.Component {
                 </svg>
               </span>
             </h2>
-            <Zoom className="m-5">
-              <Row className={classes["level-up__row"]}>
+            <Zoom>
+              <Row className={classes["level-up__row"]} style={{marginBottom: '150px'}}>
                 <div className={classes.benefits__lights} />
                 <div className={classes.benefits__lights} />
                 <Col className={classes["level-up__col"]}>
@@ -448,8 +448,8 @@ class InsightsIQ extends React.Component {
                 />
               </Row>
             </Zoom>
-            <Zoom className="m-5">
-              <Row className={classes["level-up__row"]}  style={{marginBottom: '150px'}}>
+            <Zoom>
+              <Row className={classes["level-up__row"]}>
                 <div className={classes.benefits__lights} />
                 <div className={classes.benefits__lights} />
                 <Col className={classes["level-up__col"]}>
