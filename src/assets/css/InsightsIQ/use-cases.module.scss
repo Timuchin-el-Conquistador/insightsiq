@@ -1,0 +1,249 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  padding-top: 80px;
+  margin: 20px 0 0;
+  width: 100%;
+  height: 829px;
+  background-image: url("../../images/InsightsIQ/use-cases.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
+  position: relative;
+  &__mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../images/InsightsIQ/Mask\ group.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    opacity: 0.4;
+  }
+  &__light {
+    &:nth-child(1) {
+      position: absolute;
+      width: 546.51px;
+      max-width: 100%;
+      height: 389.35px;
+      left: 0;
+      top: 150px;
+
+      background: #975be2;
+      opacity: 0.28;
+      filter: blur(152.09px);
+      transform: rotate(1.21deg);
+    }
+    &:nth-child(2) {
+      position: absolute;
+      width: 831.9px;
+      max-width: 100%;
+      height: 254.94px;
+      left: 0;
+      top: 150px;
+      opacity: 0.28;
+      background: #bf5be2;
+      filter: blur(147.446px);
+      transform: rotate(-15.44deg);
+    }
+    &:nth-child(3) {
+      position: absolute;
+      width: 529.82px;
+      max-width: 100%;
+      height: 377.46px;
+      left: 200px;
+      top: 150px;
+
+      background: #a30cff;
+      opacity: 0.28;
+      filter: blur(147.446px);
+      transform: rotate(-25.35deg);
+    }
+    &:nth-child(4) {
+      position: absolute;
+      width: 546.51px;
+      max-width: 100%;
+      height: 389.35px;
+      left: 250px;
+      top: 100px;
+
+      background: #975be2;
+      opacity: 0.28;
+      filter: blur(152.09px);
+      transform: rotate(1.21deg);
+    }
+    &:nth-child(5) {
+      position: absolute;
+      width: 546.51px;
+      max-width: 100%;
+      height: 389.35px;
+      left: 200px;
+      top: 100px;
+
+      background: #975be2;
+      opacity: 0.28;
+      filter: blur(152.09px);
+      transform: rotate(1.21deg);
+    }
+    &:nth-child(6) {
+      position: absolute;
+      width: 546.51px;
+      max-width: 100%;
+      height: 389.35px;
+      left: 200px;
+      top: 200px;
+
+      background: #975be2;
+      opacity: 0.28;
+      filter: blur(152.09px);
+      transform: rotate(1.21deg);
+    }
+  }
+
+  &__heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 90px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* White */
+
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 150px;
+    &::before,
+    &::after {
+      display: none;
+    }
+
+    @media (max-width: 600px) {
+      margin-top: 50px;
+    }
+    @media screen and (max-width: 520px) {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+  &__subheading {
+    width: 358px;
+    height: 72px;
+
+    font-family: "Abhaya Libre";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* White */
+
+    color: #ffffff;
+
+    @media (max-width: 600px) {
+      max-width: 70%;
+    }
+  }
+}
+
+.use-case {
+  /* Auto layout */
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  &--end {
+    margin-left: auto;
+  }
+  padding: 32px;
+  gap: 32px;
+  isolation: isolate;
+
+  width: 900px;
+  height: 338px;
+  max-width: 90%;
+
+  background: rgba(19, 19, 19, 0.24);
+  backdrop-filter: blur(120px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 24px;
+  margin: 150px 0 20px 0;
+  @media (max-width: 600px) {
+    flex-direction: column;
+    height: fit-content;
+    margin: auto;
+    margin-bottom: 30px;
+    & > div:first-of-type {
+      img {
+        max-width: 100px;
+      }
+    }
+  }
+
+
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: -0.02em;
+
+    /* Gray/100 */
+
+    color: #f2f4f7;
+  }
+
+  p {
+    width: 584px;
+
+    font-family: "Abhaya Libre";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* Gray/200 */
+
+    color: #eaecf0;
+
+    @media (max-width: 600px) {
+      max-width: 280px;
+    }
+     @media (min-width: 601px) and (max-width: 1294px) {
+     max-width: 350px;
+    }
+  }
+  &__lights {
+    opacity: 0.68;
+    width: 100%;
+    height: 829px;
+    position: absolute;
+    top: 150px;
+    overflow: visible;
+    img {
+      object-fit: cover;
+      object-position: -45px -45px;
+    }
+  }
+}
+
+
+

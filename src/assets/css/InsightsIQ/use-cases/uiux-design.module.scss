@@ -1,0 +1,473 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 80px;
+  margin: 20px 0 0;
+  width: 100%;
+  background-image: url("../../../images/InsightsIQ/Image.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
+  height: fit-content;
+
+  &__light {
+    &:nth-child(1) {
+      position: absolute;
+      width: 546.51px;
+      max-width: 100%;
+      height: 389.35px;
+      left: 280.26px;
+      top: 227.21px;
+
+      background: #975be2;
+      opacity: 0.28;
+      filter: blur(152.09px);
+      transform: rotate(1.21deg);
+    }
+    &:nth-child(2) {
+      position: absolute;
+      width: 831.9px;
+      max-width: 100%;
+      height: 254.94px;
+      left: 324px;
+      top: 421.45px;
+      opacity: 0.28;
+      background: #bf5be2;
+      filter: blur(147.446px);
+      transform: rotate(-15.44deg);
+    }
+    &:nth-child(3) {
+      position: absolute;
+      width: 529.82px;
+      max-width: 100%;
+      height: 377.46px;
+      left: 220.65px;
+      top: 428.83px;
+
+      background: #a30cff;
+      opacity: 0.28;
+      filter: blur(147.446px);
+      transform: rotate(-25.35deg);
+    }
+  }
+
+  &__heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 90px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* White */
+
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 150px;
+    &::before,
+    &::after {
+      display: none;
+    }
+    @media screen and (max-width: 520px) {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+  &__subheading {
+    width: 458px;
+    height: 72px;
+
+    font-family: "Abhaya Libre";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* or 150% */
+
+    /* White */
+
+    color: #ffffff;
+    @media (max-width: 600px) {
+      max-width: 70%;
+    }
+  }
+  .uiux {
+    /* Auto layout */
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 32px;
+    gap: 32px;
+    isolation: isolate;
+
+    width: 1008px;
+    height: 388px;
+    max-width: 90%;
+    background: rgba(19, 19, 19, 0.24);
+    backdrop-filter: blur(120px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 24px;
+    margin: 150px auto 20px auto;
+    @media (max-width: 600px) {
+      flex-direction: column;
+      height: fit-content;
+      margin: auto;
+      margin-bottom: 50px;
+      & > div:first-of-type {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+    h2 {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 36px;
+      line-height: 44px;
+      /* identical to box height, or 122% */
+
+      letter-spacing: -0.02em;
+
+      /* Gray/100 */
+
+      color: #f2f4f7;
+    }
+    h5 {
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+      /* identical to box height, or 133% */
+
+      /* Gray/200 */
+
+      color: #eaecf0;
+    }
+    p {
+      width: 664px;
+
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+
+      /* Gray/200 */
+
+      color: #eaecf0;
+      
+    @media (max-width: 600px) {
+      max-width: 280px;
+    }
+    @media (min-width: 601px) and (max-width: 1294px) {
+     max-width: 350px;
+    }
+    }
+
+
+  }
+}
+
+.features {
+  position: relative;
+  padding-bottom: 100px;
+
+  .concept-testing {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    isolation: isolate;
+
+    width: 1008px;
+    height: 388px;
+    max-width: 90%;
+    background: rgba(19, 19, 19, 0.24);
+    backdrop-filter: blur(120px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 24px;
+
+    gap: 8px;
+    height: 312px;
+    margin: auto;
+    margin-top: 20px;
+    @media (min-width: 300px) and (max-width: 1294px) {
+      flex-direction: column;
+      height: fit-content;
+      margin: auto;
+      margin-bottom: 50px;
+      & > div:first-of-type {
+        img {
+          max-width: 100px;
+        }
+      }
+    }
+    h3 {
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 800;
+      font-size: 24px;
+      line-height: 32px;
+      /* identical to box height, or 133% */
+
+      /* Gray/200 */
+
+      color: #eaecf0;
+    }
+    p {
+      width: 100%;
+
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+
+      /* Gray/200 */
+
+      color: #eaecf0;
+
+    }
+
+    ol {
+      padding-left: 10px;
+      width: 100%;
+      li {
+        font-family: "Abhaya Libre";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        /* or 150% */
+
+        /* Gray/200 */
+
+        color: #eaecf0;
+      }
+    }
+    &.feedbacks {
+      height: fit-content
+    }
+  }
+  &__heading {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 44px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: -0.02em;
+
+    /* White */
+
+    color: #ffffff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+
+  &__lights {
+    opacity: 0.68;
+    width: 100%;
+    height: 829px;
+    position: absolute;
+    top: 150px;
+    overflow: visible;
+    img {
+      object-fit: cover;
+      object-position: -45px -45px;
+    }
+  }
+  &__row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    &:last-child {
+      padding: 20px 50px;
+      justify-content: space-between;
+    }
+  }
+  &__feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 8px;
+
+    width: 280px;
+    height: 256px;
+
+    background: rgba(19, 19, 19, 0.24);
+    border: 1px solid rgba(233, 215, 254, 0.04);
+    backdrop-filter: blur(120px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 16px;
+    transition: all 0.2;
+    figcaption {
+      width: 232px;
+
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+      color: #ffffff;
+      max-height: 208px;
+      overflow: hidden;
+
+      h5 {
+        font-family: "Abhaya Libre";
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 32px;
+        /* identical to box height, or 133% */
+
+        color: #ffffff;
+      }
+    }
+
+    &--active {
+      min-height: 256px;
+      height: fit-content;
+      transition: all 0.2;
+      figcaption {
+        max-height: fit-content;
+      }
+    }
+  }
+}
+
+
+.reasons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 70px 0;
+    margin-bottom: 160px;
+    padding: 0 100px;
+    position: relative;
+
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+    &__lights {
+        opacity: 0.68;
+        width: 100%;
+        height: 829px;
+        position: absolute;
+        top: -200px;
+        overflow: visible;
+        img {
+          object-fit: cover;
+          object-position: -45px -45px;
+        }
+      }
+    &__heading{
+        font-family: 'Montserrat';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 44px;
+        /* identical to box height, or 122% */
+        
+        letter-spacing: -0.02em;
+        
+        /* White */
+        
+        color: #FFFFFF;
+        margin-bottom: 40px;
+ 
+    }
+
+  &__row{
+    gap: 30px
+  }
+
+
+    &__reason{
+        /* Auto layout */
+
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 24px;
+gap: 8px;
+
+width: 496px;
+
+
+
+background: rgba(19, 19, 19, 0.24);
+border: 1px solid rgba(233, 215, 254, 0.04);
+backdrop-filter: blur(120px);
+-webkit-backdrop-filter: blur(120px);
+-moz-backdrop-filter:blur(120px);
+-ms-backdrop-filter:blur(120px);
+-o-backdrop-filter:blur(120px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+
+
+@media (max-width: 600px) {
+  width: 300px;
+  margin: auto;
+  height: fit-content;
+}
+h5{
+
+
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 22px;
+/* identical to box height, or 133% */
+
+
+color: #FFFFFF;
+text-align: left;
+}
+p{
+    width: 448px;
+
+font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 19px;
+/* or 150% */
+
+
+color: #FFFFFF;
+text-align: left;
+
+@media (max-width: 600px) {
+  width: 90%;
+}
+}
+    }
+}
+

@@ -1,0 +1,127 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  padding-top: 80px;
+  margin: 20px 0 0;
+  width: 100%;
+
+  background-size: contain;
+  background-position: center top;
+  &__heading {
+    font-family: "Abhaya Libre";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 38px;
+    /* identical to box height, or 125% */
+
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    /* White */
+
+    color: #ffffff;
+    margin-bottom: 0;
+    margin-top: 150px;
+    width: 388px;
+    max-width: 90%;
+    margin: 20px auto;
+    &::before,
+    &::after {
+      display: none;
+    }
+    @media (max-width: 600px) {
+      margin-top: 50px;
+    }
+    @media screen and (max-width: 520px) {
+      font-size: 32px;
+      line-height: 50px;
+    }
+  }
+
+  header {
+    font-family: "Abhaya Libre";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+
+    /* Gray/300 */
+
+    color: #d0d5dd;
+    margin: 0 auto;
+
+    time {
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      /* identical to box height, or 143% */
+
+      /* Gray/500 */
+
+      color: #667085;
+      margin-left: 8px;
+    }
+  }
+
+
+&__blog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+  img {
+    width: 1008px;
+    height: 616px;
+     max-width: 100%;
+    border-radius: 26.5263px;
+    margin-bottom: 20px;
+  }
+
+  p {
+    width: 1008px;
+
+    font-family: "Abhaya Libre";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    /* or 150% */
+
+    /* White */
+
+    color: #ffffff;
+
+    max-width: 100%;
+  }
+}
+&__lights {
+    opacity: 0.68;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: visible;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    img {
+      object-fit: cover;
+      object-position: center;
+      width: 100%;
+     max-width: 1400px;
+     overflow: visible;
+    }
+
+    @media (max-width: 984px) {
+      bottom: 400px;
+      
+    }
+  }
+}

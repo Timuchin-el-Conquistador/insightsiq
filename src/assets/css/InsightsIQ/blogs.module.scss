@@ -1,0 +1,314 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    padding-top: 80px;
+    margin: 20px 0 0;
+    width: 100%;
+    height: 829px;
+    background-image: url("../../images/InsightsIQ/blog.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    position: relative;
+      z-index: 101;
+    &__mask{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../images/InsightsIQ/Mask\ group.png");
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 0;
+        opacity: 0.4;
+        
+    }
+    &__light {
+      &:nth-child(1) {
+        position: absolute;
+        width: 546.51px;
+        max-width: 100%;
+        height: 389.35px;
+        left: 280.26px;
+        top: 227.21px;
+  
+        background: #975be2;
+        opacity: 0.28;
+        filter: blur(152.09px);
+        transform: rotate(1.21deg);
+      }
+      &:nth-child(2) {
+        position: absolute;
+        width: 831.9px;
+        max-width: 100%;
+        height: 254.94px;
+        left: 324px;
+        top: 421.45px;
+        opacity: 0.28;
+        background: #bf5be2;
+        filter: blur(147.446px);
+        transform: rotate(-15.44deg);
+      }
+      &:nth-child(3) {
+        position: absolute;
+        width: 529.82px;
+        max-width: 100%;
+        height: 377.46px;
+        left: 220.65px;
+        top: 428.83px;
+  
+        background: #a30cff;
+        opacity: 0.28;
+        filter: blur(147.446px);
+        transform: rotate(-25.35deg);
+      }
+    }
+  
+    &__heading {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 90px;
+      /* identical to box height, or 125% */
+  
+      text-align: center;
+      letter-spacing: -0.02em;
+  
+      /* White */
+  
+      color: #ffffff;
+      margin-bottom: 0;
+      margin-top: 150px;
+      &::before,
+      &::after {
+        display: none;
+      }
+      @media screen and (max-width: 520px) {
+        font-size: 32px;
+        line-height: 50px;
+      }
+    }
+    &__subheading {
+      width: 358px;
+      height: 72px;
+  
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+  
+      /* White */
+  
+      color: #ffffff;
+
+      @media (max-width: 600px) {
+        max-width: 70%;
+      }
+    }
+
+
+    &__filter-btn{
+        font-family: 'Montserrat';
+        color: #ffffff;
+           font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      border: none;
+      background-color: transparent;
+      outline: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100px;
+    
+
+    }
+    &__filter-options{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 16px;
+      gap: 16px;
+      
+      position: absolute;
+      width: 137px;
+      left: 0;
+      top:  40px;
+      
+      /* White */
+      
+      background: #FFFFFF;
+      border-radius: 12px;
+      
+
+      input[type=button]{
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        /* identical to box height, or 143% */
+        
+        
+        /* Gray/700 */
+        
+        color: #344054;
+        background-color: transparent;
+        border: none;
+      }
+    
+    }
+}
+
+
+.blogs{
+        &--filter{
+          z-index: -1;
+          position: relative;  //filter window to overlap the section
+        }
+    &__container{
+        display: flex;
+        justify-content: center;
+        gap: 30px
+    }
+    &__blog{
+        display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+padding: 16px;
+gap: 8px;
+
+
+width: 488px;
+@media (max-width: 600px) {
+max-width: 99vw;
+}
+
+background: rgba(19, 19, 19, 0.24);
+border-top: 1px solid rgba(255, 255, 255, 0.2);
+backdrop-filter: blur(120px);
+-webkit-backdrop-filter: blur(120px);
+-moz-backdrop-filter:blur(120px);
+-ms-backdrop-filter:blur(120px);
+-o-backdrop-filter:blur(120px);
+/* Note: backdrop-filter has minimal browser support */
+
+border-radius: 16px;
+
+cursor: pointer;
+pointer-events: all;
+figure{
+    width: 456px;
+height: 279px;
+
+border-radius: 12px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 1;
+
+@media (max-width: 600px) {
+max-width: 100%;
+}
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+}
+header{
+    font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height, or 150% */
+
+
+/* Gray/300 */
+
+color: #D0D5DD;
+}
+h3{
+    font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 800;
+font-size: 24px;
+line-height: 32px;
+/* identical to box height, or 133% */
+
+
+/* White */
+
+color: #FFFFFF;
+
+}
+p{
+    font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+
+
+/* Gray/400 */
+
+color: #98A2B3;
+
+}
+time{
+    font-family: 'Abhaya Libre';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 20px;
+/* identical to box height, or 143% */
+
+
+/* Gray/500 */
+
+color: #667085;
+}
+    }
+
+&__pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 80px;
+    width: 100%;
+    margin-top: 80px;
+    position: relative;
+  }
+
+  &__lights {
+    opacity: 0.68;
+    width: 100%;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    overflow: visible;
+    pointer-events: none;
+    img {
+      object-fit: cover;
+      object-position: right center;
+      width: 100%;
+      margin: auto;
+    }
+  }
+  
+}

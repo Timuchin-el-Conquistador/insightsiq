@@ -1,0 +1,157 @@
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
+    padding-top: 80px;
+    margin: 20px 0 0;
+    width: 100%;
+    height: 829px;
+    background-image: url("../../images/InsightsIQ/Pricing.png");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 0;
+    position: relative;
+    &__mask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../images/InsightsIQ/Mask\ group.png");
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 0;
+      opacity: 0.4;
+    }
+    &__light {
+      &:nth-child(1) {
+        position: absolute;
+        width: 546.51px;
+        max-width: 100%;
+        height: 389.35px;
+        left: 0;
+        top: 150px;
+  
+        background: #975be2;
+        opacity: 0.28;
+        filter: blur(152.09px);
+        transform: rotate(1.21deg);
+      }
+      &:nth-child(2) {
+        position: absolute;
+        width: 831.9px;
+        max-width: 100%;
+        height: 254.94px;
+        left: 0;
+        top: 150px;
+        opacity: 0.28;
+        background: #bf5be2;
+        filter: blur(147.446px);
+        transform: rotate(-15.44deg);
+      }
+      &:nth-child(3) {
+        position: absolute;
+        width: 529.82px;
+        max-width: 100%;
+        height: 377.46px;
+        left: 200px;
+        top: 150px;
+  
+        background: #a30cff;
+        opacity: 0.28;
+        filter: blur(147.446px);
+        transform: rotate(-25.35deg);
+      }
+      &:nth-child(4) {
+        position: absolute;
+        width: 546.51px;
+        max-width: 100%;
+        height: 389.35px;
+        left: 250px;
+        top: 100px;
+  
+        background: #975be2;
+        opacity: 0.28;
+        filter: blur(152.09px);
+        transform: rotate(1.21deg);
+      }
+      &:nth-child(5) {
+        position: absolute;
+        width: 546.51px;
+        max-width: 100%;
+        height: 389.35px;
+        left: 200px;
+        top: 100px;
+  
+        background: #975be2;
+        opacity: 0.28;
+        filter: blur(152.09px);
+        transform: rotate(1.21deg);
+      }
+      &:nth-child(6) {
+        position: absolute;
+        width: 546.51px;
+        max-width: 100%;
+        height: 389.35px;
+        left: 200px;
+        top: 200px;
+  
+        background: #975be2;
+        opacity: 0.28;
+        filter: blur(152.09px);
+        transform: rotate(1.21deg);
+      }
+    }
+  
+    &__heading {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 72px;
+      line-height: 90px;
+      /* identical to box height, or 125% */
+  
+      text-align: center;
+      letter-spacing: -0.02em;
+  
+      /* White */
+  
+      color: #ffffff;
+      margin-bottom: 0;
+      margin-top: 150px;
+      &::before,
+      &::after {
+        display: none;
+      }
+  
+      @media (max-width: 600px) {
+        margin-top: 50px;
+      }
+      @media screen and (max-width: 520px) {
+        font-size: 32px;
+        line-height: 50px;
+      }
+    }
+    &__subheading {
+      width: 358px;
+      height: 72px;
+  
+      font-family: "Abhaya Libre";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      /* or 150% */
+  
+      /* White */
+  
+      color: #ffffff;
+  
+      @media (max-width: 600px) {
+        max-width: 70%;
+      }
+    }
+  }
