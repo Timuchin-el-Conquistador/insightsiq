@@ -422,8 +422,8 @@ class InsightsIQ extends React.Component {
                 </Col>
               </Row>
             </Zoom>
-            <Zoom className="m-5">
-              <Row className={classes["level-up__row"]}>
+            <Zoom>
+              <Row className={classes["level-up__row"]} style={{marginBottom: '150px'}}>
                 <Col className={`${classes["level-up__col-img"]}`}>
                   <img src={NavigateSurvey} alt="" />
                 </Col>
@@ -449,7 +449,7 @@ class InsightsIQ extends React.Component {
               </Row>
             </Zoom>
             <Zoom className="m-5">
-              <Row className={classes["level-up__row"]}>
+              <Row className={classes["level-up__row"]}  style={{marginBottom: '150px'}}>
                 <div className={classes.benefits__lights} />
                 <div className={classes.benefits__lights} />
                 <Col className={classes["level-up__col"]}>
@@ -522,8 +522,8 @@ class InsightsIQ extends React.Component {
               <div className={classes["ui-link-1"]} />
 
               <div className={classes.benefits__list}>
-                <Zoom triggerOnce style={{ marginTop: "220px" }}>
-                  <Row className={classes.benefits__row}>
+                <Zoom triggerOnce >
+                  <Row className={classes.benefits__row} style={{ marginTop: "220px" }}>
                     <div className={classes.benefits__lights} />
                     <div className={classes.benefits__lights} />
                     <Col className={classes.benefits__col}>
